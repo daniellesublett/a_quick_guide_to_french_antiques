@@ -1,0 +1,29 @@
+
+h1 {
+	text-align:center;
+	font-family: 'Cinzel', serif;
+}
+img {
+	width:300px; 
+	border:5px solid grey;
+	
+}
+img:hover {
+	opacity:.5;
+    width:300px;
+	
+}
+div.grid div {
+	float:left;
+	margin-right:5px;
+}
+div.grid{
+	width:975px;
+	margin:0 auto;		
+}
+
+body {
+	text-align:center;
+	font-family: 'Cinzel', serif;
+	
+}

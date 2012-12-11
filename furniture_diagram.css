@@ -1,0 +1,63 @@
+body {
+	text-align:center;
+	font-family: 'Cinzel', serif;
+	
+}
+
+h1 {
+	text-align:center;
+	font-family: 'Cinzel', serif;
+}
+img {
+	width:600px;
+	float:left; 
+	
+}
+img:hover {
+	opacity:.5;
+    width:600px;
+}
+
+h3 {
+	background-color: gray;
+	text-align:center;
+	font-family: 'Cinzel', serif;
+}
+div.grid > div { /* ">" means only style the divs that are directly inside div.grid, not ones at any level inside */
+	clear:left;
+	position: relative;
+}
+/*clear works opposite to float look up*/
+div.grid{
+	width:975px;
+	margin:0 auto;
+	text-align:left;		
+
+}
+
+.features-container{
+	/*
+	features-container is like one tall element with a single "line" of text.
+	we're taking advantage of the fact that a line of text is vertically centered within
+	the line height. so we make a 600px tall "line"... and then the .features ul inside here
+	is set to display: inline-block, which makes it act like a text element.
+	*/
+	float:left;
+	height: 600px;
+	line-height: 600px;
+}
+.features{
+	line-height:1.25;
+	display:inline-block;
+	vertical-align:middle;
+}
+.highlight {
+	display: none;
+	position: absolute;
+	opacity: 0.5;
+}
+.features li:hover > .highlight {
+	display: block;
+}
+
+
